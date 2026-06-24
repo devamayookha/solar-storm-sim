@@ -42,24 +42,24 @@ http://127.0.0.1:5000
 
 📸 What It Looks Like
 
-- Modern dark space-themed design
-- Simple input form with flare class (B/C/M/X) and duration slider
-- Live animated timeline showing storm progression
-- Three system cards that dynamically change color and status
-- Final results section with insights and two action buttons
+• Modern dark space-themed design
+• Simple input form with flare class (B/C/M/X) and duration slider
+• Live animated timeline showing storm progression
+• Three system cards that dynamically change color and status
+• Final results section with insights and two action buttons (Reset + Download Report)
 
 🛠️ Possible Future Improvements (Version 2)
 
-- Add visual charts for impact curves
-- More satellite systems
-- Adjustable simulation parameters
-- Side-by-side simulation comparison
-- Light/Dark mode toggle
+• Add visual charts for impact curves
+• More satellite systems
+• Adjustable simulation parameters
+• Side-by-side simulation comparison
+• Light/Dark mode toggle
 
 📌 Learning Outcomes
 
-- Full-stack web development using Flask
-- Building interactive simulations with rule-based modeling
-- Dynamic UI updates using vanilla JavaScript
-- Clean code structure and user-friendly interface design
-- Basic error handling
+• Full-stack web development using Flask
+• Building interactive simulations with rule-based modeling
+• Dynamic UI updates using vanilla JavaScript
+• Clean code structure and user-friendly interface design
+• Basic error handling
