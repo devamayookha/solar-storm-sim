@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Storm Impact Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☀️ Solar Storm Impact Simulator</h1>
+            <p>Simulating real-time impact of solar flares on satellite systems</p>
+        </header>
+
+        <div class="input-section">
+            <form id="simForm">
+                <div class="form-group">
+                    <label for="flare">Solar Flare Class:</label>
+                    <select id="flare" name="flare_class" required>
+                        <option value="B">B - Very Mild</option>
+                        <option value="C" selected>C - Mild</option>
+                        <option value="M">M - Moderate</option>
+                        <option value="X">X - Severe (Strongest)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Storm Duration (hours): <span id="durValue">12</span></label>
+                    <input type="range" id="duration" name="duration" min="1" max="72" value="12">
+                </div>
+
+                <button type="submit" id="runBtn">🚀 Run Simulation</button>
+            </form>
+        </div>
+
+        <div id="simulation" class="simulation hidden">
+            <h2>Live Simulation</h2>
+            
+            <div class="intensity-meter">
+                <label>Storm Intensity</label>
+                <div class="progress-bar">
+                    <div id="intensity" class="progress"></div>
+                </div>
+            </div>
+
+            <div class="timeline" id="timeline"></div>
+
+            <div class="systems">
+                <div class="system-card" id="GPS">
+                    <div class="icon">📡</div>
+                    <h3>GPS Navigation</h3>
+                    <div class="status" id="GPS-status">Ready</div>
+                </div>
+                <div class="system-card" id="SatCom">
+                    <div class="icon">📡</div>
+                    <h3>Satellite Communication</h3>
+                    <div class="status" id="SatCom-status">Ready</div>
+                </div>
+                <div class="system-card" id="EarthObs">
+                    <div class="icon">🛰️</div>
+                    <h3>Earth Observation</h3>
+                    <div class="status" id="EarthObs-status">Ready</div>
+                </div>
+            </div>
+
+            <div id="results" class="results hidden">
+                <h3>Storm Summary & Insights</h3>
+                <p><strong>Estimated Recovery Time:</strong> <span id="recovery"></span> hours after storm ends</p>
+                <div id="precautions"></div>
+                
+                <div id="education" class="education-panel"></div>
+                
+                <div class="action-buttons">
+                    <button id="resetBtn" class="reset-btn">Run New Simulation</button>
+                    <button id="downloadBtn" class="download-btn">📄 Download Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
