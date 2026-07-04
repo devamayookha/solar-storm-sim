@@ -117,9 +117,9 @@ def simulate():
         return jsonify({"error": "Invalid input. Please try again."}), 400
 
 if __name__ == '__main__':
-    # For local development
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
 else:
     # For Render deployment
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=False)
