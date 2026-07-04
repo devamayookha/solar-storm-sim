@@ -1,5 +1,11 @@
 # Solar Storm Impact Simulator
+# Solar Storm Impact Simulator
+
+**Author**: B R Devamayookha  
+**2nd Year B.Tech - AI & Data Science**
+
 An interactive web app that simulates how solar storms affect satellite systems over time.
+
 A clean, educational project built to demonstrate real-world space weather impacts on critical satellite infrastructure.
 
 ## 🎯 Problem It Solves
