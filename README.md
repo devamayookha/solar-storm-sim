@@ -1,5 +1,4 @@
 # Solar Storm Impact Simulator
-# Solar Storm Impact Simulator
 
 **Author**: B R Devamayookha  
 **2nd Year B.Tech - AI & Data Science**
@@ -50,6 +49,9 @@ python app.py
 ```
 
 5. Open your browser and go to: http://127.0.0.1:5000
+
+🌐 Live Demo
+https://solar-storm-sim.onrender.com/
 
 ## 📸 What It Looks Like
 
