@@ -76,3 +76,13 @@ https://solar-storm-sim.onrender.com/
 * Dynamic UI updates using vanilla JavaScript
 * Clean code structure and user-friendly interface design
 * Basic error handling
+
+---
+
+## About This Experiment
+
+This application is part of a series of seven small space-tech experiments I created in 2026 to explore different AI coding assistants. Each experiment uses a different project idea and AI tool, following the same prompting approach.
+
+**AI coding assistant used:** Grok
+
+I directed the project, tested the application and worked through its deployment, while much of the code was AI-generated. The purpose of this series is to learn the tools, explore the underlying technical concepts and understand AI-assisted development workflows — not to present these builds as proof of independent programming proficiency.
